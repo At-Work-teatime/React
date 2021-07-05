@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
+/* 이 부분 뭘 import하는 걸 의미하는지 모르겠어요! 버튼에 링크가 걸려서 사용하는 건가?!*/
 import '../css/pageBase.css';
 
 function Login() {

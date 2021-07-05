@@ -10,6 +10,7 @@ function InputName() {
     const name = e.target.value;
     setName(name);
   };
+  /* 윗 부분 설명 한 번만 부탁드립니다! */
 
   return (
     <div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+/* 어떤 상황에서 useState를 사용하나요?*/
 import { Button, Input } from 'antd';
 import 'antd/dist/antd.css';
 import { isEmail } from '../../common/email';
@@ -24,10 +25,10 @@ function InputForm() {
       </h1>
       <h3>회사에서 사용하는 이메일을 입력해주세요</h3>
       <Input
-        allowClear
+        allowClear /*텍스트 전체삭제*/
         style={{ width: '40%' }}
         placeholder="이메일"
-        onChange={onChangeEmail}
+        onChange={onChangeEmail} /*검색해보기*/
       />
       <div style={{ color: 'red', fontSize: '12px' }}>{error}</div>
       {isEmail(email) ? (
@@ -43,6 +44,6 @@ function InputForm() {
       )}
     </div>
   );
-}
+}/*버튼은 왜 두개로 분리해놓으신건가요?! 이메일 에러났을 때 안눌리게 하는 건가요?*/
 
 export default InputForm;

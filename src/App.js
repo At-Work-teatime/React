@@ -23,3 +23,5 @@ function App() {
   );
 }
 export default App;
+
+/*app.js파일은 어떤 역할을 하는걸까요*/
