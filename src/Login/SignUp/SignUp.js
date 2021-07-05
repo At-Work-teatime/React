@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
+import { RightOutlined } from '@ant-design/icons';
+
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
 function SignUp() {
@@ -10,9 +12,12 @@ function SignUp() {
         회사 동료들
       </h1>
       <Link to="/SignUp/InputForm">
-        <Button type="primary" shape="circle" size="large">
-          {'>'}
-        </Button>
+        <Button
+          type="primary"
+          shape="circle"
+          size="large"
+          icon={<RightOutlined />}
+        ></Button>
       </Link>
     </div>
   );

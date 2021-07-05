@@ -4,6 +4,7 @@ import { Button, Input } from 'antd';
 import 'antd/dist/antd.css';
 import { isEmail } from '../../common/email';
 import { Link } from 'react-router-dom';
+import { RightOutlined } from '@ant-design/icons';
 
 function InputForm() {
   const [email, setEmail] = useState('');
@@ -33,14 +34,20 @@ function InputForm() {
       <div style={{ color: 'red', fontSize: '12px' }}>{error}</div>
       {isEmail(email) ? (
         <Link to="/SignUp/SelectCompany">
-          <Button type="primary" shape="circle" size="large">
-            {'>'}
-          </Button>
+          <Button
+            type="primary"
+            shape="circle"
+            size="large"
+            icon={<RightOutlined />}
+          ></Button>
         </Link>
       ) : (
-        <Button type="primary" shape="circle" size="large">
-          {'>'}
-        </Button>
+        <Button
+          type="primary"
+          shape="circle"
+          size="large"
+          icon={<RightOutlined />}
+        ></Button>
       )}
     </div>
   );
