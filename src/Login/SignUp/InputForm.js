@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { RightOutlined } from '@ant-design/icons';
 
 function InputForm() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('아경바보');
   const [error, setErrror] = useState('');
   const onChangeEmail = (e) => {
     const email = e.target.value;
@@ -54,3 +54,4 @@ function InputForm() {
 }/*버튼은 왜 두개로 분리해놓으신건가요?! 이메일 에러났을 때 안눌리게 하는 건가요?*/
 
 export default InputForm;
+/*test*/
