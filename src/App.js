@@ -10,6 +10,7 @@ import InputJob from './Login/SignUp/InputJob';
 import InputProfile from './Login/SignUp/InputProfile';
 
 import './css/screen.css';
+import InputInterest from './Login/SignUp/Interest';
 function App() {
   return (
     <div className="screen">
@@ -21,6 +22,7 @@ function App() {
       <Route path="/SignUp/InputName" component={InputName} />
       <Route path="/SignUp/InputJob" component={InputJob} />
       <Route path="/SignUp/InputProfile" component={InputProfile} />
+      <Route path="/SignUp/Interest" component={InputInterest} />
     </div>
   );
 }
