@@ -1,16 +1,17 @@
 import React from 'react';
 import { Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
+import imgA from '/Users/hug.ing/Desktop/at-work-react/src/css/source/img1.png';
 
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
 function SignUp() {
   return (
     <div>
-      <h1>
-        함께 일해도 낯설기만한 <br />
-        회사 동료들
-      </h1>
+      <img src={imgA} width="327px" alt="illustration"/>
+      <section class="title__main">
+        함께 일해도 낯설기만한회사 동료들
+      </section>
       <Link to="/SignUp/InputForm">
         <Button
           type="primary"
