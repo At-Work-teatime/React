@@ -3,7 +3,7 @@ import "/Users/hug.ing/Desktop/at-work-react/src/css/screen.css";
 import imgA from '/Users/hug.ing/Desktop/at-work-react/src/css/source/img1.png';
 import iconA from '../../css/icon/arrow-right.svg';
 
-function SignUp(history) {
+function SignUp2(history) {
   return (
     <div class="none">
       <div class="img">
@@ -11,13 +11,13 @@ function SignUp(history) {
       </div>
       <section>
         <form class="text__title">
-          함께 일해도 낯설기만한회사 동료들
+          함께 일일일
         </form>
         <form class="text_subtitle">
           atwork는 회사사람들이 친해지는 그날까지 함께합니다.
         </form>
       </section>
-      <button class="btn-floting" onClick={() => history.push('../SignUp/InputName')}>
+      <button class="btn-floting" onClick={() => history.push('../SignUp/InputForm')}>
         <img src={iconA} width="40px" height="40px" alt="icon"/>
       </button>
       <span class="btn-text" >
@@ -30,4 +30,4 @@ function SignUp(history) {
   );
 }
 
-export default SignUp;
+export default SignUp2;

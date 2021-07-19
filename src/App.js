@@ -11,6 +11,7 @@ import InputProfile from './Login/SignUp/InputProfile';
 
 import './css/screen.css';
 import InputInterest from './Login/SignUp/Interest';
+
 function App() {
   return (
     <div className="screen">
@@ -27,5 +28,3 @@ function App() {
   );
 }
 export default App;
-
-/*app.js파일은 어떤 역할을 하는걸까요*/
