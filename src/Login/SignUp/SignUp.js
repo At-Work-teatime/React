@@ -1,9 +1,9 @@
 import React from 'react';
-import "/Users/hug.ing/Desktop/at-work-react/src/css/screen.css";
-import imgA from '/Users/hug.ing/Desktop/at-work-react/src/css/source/img1.png';
+import "../../css/screen.css";
+import imgA from '../../css/source/img1.png';
 import iconA from '../../css/icon/arrow-right.svg';
 
-function SignUp(history) {
+function SignUp({history}) {
   return (
     <div class="none">
       <div class="img">
@@ -21,7 +21,7 @@ function SignUp(history) {
         <img src={iconA} width="40px" height="40px" alt="icon"/>
       </button>
       <span class="btn-text" >
-        <a herf="/Users/hug.ing/Desktop/at-work-react/src/Login/LoginPage.js">
+        <a href="/Users/hug.ing/Desktop/at-work-react/src/Login/LoginPage.js">
         건너뛰기
         </a>
       </span>
