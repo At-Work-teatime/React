@@ -21,7 +21,8 @@ function ProfilePage({ history }) {
   };
   return (
     <div>
-      <Button shape="circle" size="large" icon={<LeftOutlined />}></Button>
+      <Button shape="circle" size="large" icon={<LeftOutlined />}         onClick={() => history.push("/main")}
+ ></Button>
 
       <ProfileBox>
         <ProfileImage />
