@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { UserAddOutlined } from "@ant-design/icons";
 import { RightOutlined } from "@ant-design/icons";
 import { ProfileBox } from "../../style/profile";
+
 function InputProfile() {
   const [file, setFile] = useState("");
   const hiddenFileInput = React.useRef(null);
