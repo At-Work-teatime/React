@@ -23,9 +23,6 @@ function ProfilePage({ history }) {
     <div>
       <Button shape="circle" size="large" icon={<LeftOutlined />}></Button>
 
-      <section class="title__main">
-        직장생활을 위한 네트워킹 플랫폼, at-work!
-      </section>
       <ProfileBox>
         <ProfileImage />
       </ProfileBox>

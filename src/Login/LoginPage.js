@@ -3,7 +3,7 @@ import React from 'react';
 function Login({history}) {
   return (
     <div>
-      <section class="title__main">
+      <section class="text__title">
       직장생활을 위한 네트워킹 플랫폼, at-work!
       </section>
       <form class="button-form-full">
