@@ -2,6 +2,8 @@ import React from "react";
 import "../../css/screen.css";
 import imgA from "../../css/source/img1.png";
 import iconA from "../../css/icon/arrow-right.svg";
+import {Link} from 'react-router-dom'
+import {FloatingBtn} from '../../style/button'
 
 function SignUp({ history }) {
   return (
@@ -15,14 +17,13 @@ function SignUp({ history }) {
           atwork는 회사사람들이 친해지는 그날까지 함께합니다.
         </form>
       </section>
-      <button
-        class="btn-floting"
-        onClick={() => history.push("./SignUp/InputName")}
+      <FloatingBtn
+        onClick={() => history.push("./SignUp/InputEmail")}
       >
         <img src={iconA} width="40px" height="40px" alt="icon" />
-      </button>
-      <span class="btn-text">
-        <a herf="../LoginPage.js">건너뛰기</a>
+      </FloatingBtn>
+      <span class="btn-text" >
+        <Link to="../SignIn">건너뛰기</Link>
       </span>
     </div>
   );
