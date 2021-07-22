@@ -1,9 +1,9 @@
 import React from 'react';
-import "/Users/hug.ing/Desktop/at-work-react/src/css/screen.css";
-import imgA from '/Users/hug.ing/Desktop/at-work-react/src/css/source/img1.png';
+import "../../css/screen.css";
+import imgA from '../..css/source/img1.png';
 import iconA from '../../css/icon/arrow-right.svg';
 
-function SignUp2(history) {
+function SignUp2({history}) {
   return (
     <div class="none">
       <div class="img">
