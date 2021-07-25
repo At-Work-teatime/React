@@ -25,7 +25,7 @@ function InputInterest() {
             노래부르기
             </Button>
             </div>
-            <Link to="/SignUp/Interest">
+            <Link to="/main">
                 <Button
                 type="primary"
                 shape="circle"
