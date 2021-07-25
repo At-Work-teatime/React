@@ -1,7 +1,17 @@
 import React from 'react';
-import "../../css/screen.css";
+import styled from "styled-components";
+import {Title} from "../LoginPage";
+
 import imgA from '../../css/source/img1.png';
 import iconA from '../../css/icon/arrow-right.svg';
+
+const SubTitle = styled.div`
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 193px;
+  color: #707070;
+`;
 
 function SignUp({history}) {
   return (
@@ -9,14 +19,12 @@ function SignUp({history}) {
       <div class="img">
         <img src={imgA} width="327px" alt="illustration"/>
       </div>
-      <section>
-        <form class="text__title">
-          함께 일해도 낯설기만한회사 동료들
-        </form>
-        <form class="text_subtitle">
-          atwork는 회사사람들이 친해지는 그날까지 함께합니다.
-        </form>
-      </section>
+      <Title>
+        함께 일해도 낯설기만한회사 동료들
+      </Title>
+      <SubTitle>
+        atwork는 회사사람들이 친해지는 그날까지 함께합니다.
+      </SubTitle>
       <button class="btn-floting" onClick={() => history.push('../SignUp/InputName')}>
         <img src={iconA} width="40px" height="40px" alt="icon"/>
       </button>
@@ -25,7 +33,6 @@ function SignUp({history}) {
         건너뛰기
         </a>
       </span>
-
     </div>
   );
 }
