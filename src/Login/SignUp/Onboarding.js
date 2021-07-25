@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import {Title} from "../LoginPage";
+import {Title, SubTitle} from "../../style/Text";
 
 import React from "react";
 import "../../css/screen.css";
@@ -8,13 +7,6 @@ import iconA from "../../css/icon/arrow-right.svg";
 import {Link} from 'react-router-dom'
 import {FloatingBtn} from '../../style/button'
 
-const SubTitle = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  width: 193px;
-  color: #707070;
-`;
 
 function SignUp({ history }) {
   return (

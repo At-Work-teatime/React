@@ -1,32 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-
-export const Title = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  margin: 30px 0px 14px 0px;
-  width: 235px;
-  color: #303030;
-`;
-
-export const FullButton = styled.button`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  border: none; 
-  border-radius: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  font-weight: 350;
-  padding: 17px 0px;
-  color:#ffffff;
-  
-  background-color:${props => props.color || 'blue'};
-  
-  & + button {margin-top: 1rem;}
-`;
+import {Title} from "../style/Text";
+import {FullButton} from "../style/button";
 
 function Login({history}) {
   return (
