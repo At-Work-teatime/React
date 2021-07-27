@@ -9,7 +9,7 @@ function InputJob() {
   const [job, setJob] = useState('');
   const onChangeJob = (e) => {
     const job = e.target.value;
-    setJob(job);
+    setJob(e.target.value);
   };
 
   return (
@@ -28,7 +28,7 @@ function InputJob() {
           size="large"
           icon={<RightOutlined />}
           onChange= {<RightOutlined />}
-        ></Button>
+         />
       </Link>
     </div>
   );

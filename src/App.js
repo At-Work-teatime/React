@@ -1,18 +1,17 @@
-import React from "react";
-import { Route } from "react-router-dom";
-import Login from "./Login/LoginPage";
-import SignIn from "./Login/SignIn/SignIn";
-import SignUp from "./Login/SignUp/SignUp";
-import InputEmail from "./Login/SignUp/InputEmail";
-import SelectCompany from "./Login/SignUp/SelectCompany";
-import InputName from "./Login/SignUp/InputName";
-import InputJob from "./Login/SignUp/InputJob";
-import InputProfile from "./Login/SignUp/InputProfile";
-import ProfilePage from "./Profile/ProfilePage";
-import MainPage from "./Main/MainPage"
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Login from './Login/LoginPage';
+import SignIn from './Login/SignIn/SignIn';
+import SignUp from './Login/SignUp/SignUp';
+import InputEmail from './Login/SignUp/InputEmail';
+import SelectCompany from './Login/SignUp/SelectCompany';
+import InputName from './Login/SignUp/InputName';
+import InputJob from './Login/SignUp/InputJob';
+import InputProfile from './Login/SignUp/InputProfile';
+import MainPage from './Main/MainPage';
+import './css/screen.css';
+import InputInterest from './Login/SignUp/Interest';
 
-import "./css/screen.css";
-import InputInterest from "./Login/SignUp/Interest";
 function App() {
   return (
     <div className="screen">
@@ -26,7 +25,6 @@ function App() {
       <Route path="/SignUp/InputProfile" component={InputProfile} />
       <Route path="/SignUp/Interest" component={InputInterest} />
       <Route path="/main" component={MainPage} />
-      <Route path="/profile" component={ProfilePage} />
     </div>
   );
 }

@@ -27,7 +27,7 @@ function InputName() {
           shape="circle"
           size="large"
           icon={<RightOutlined />}
-        ></Button>
+         />
       </Link>
     </div>
   );

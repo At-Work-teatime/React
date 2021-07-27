@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Button, Input } from "antd";
 import "antd/dist/antd.css";
 import { Link } from "react-router-dom";
-import { UserAddOutlined } from "@ant-design/icons";
-import { RightOutlined } from "@ant-design/icons";
+import { UserAddOutlined , RightOutlined } from "@ant-design/icons";
+
 import { ProfileBox } from "../../style/profile";
 
 function InputProfile() {
@@ -17,8 +17,8 @@ function InputProfile() {
     if (e.target.files[0]) {
       const img = new FormData();
       img.append("file", e.target.files[0]);
-      let reader = new FileReader();
-      let file = e.target.files[0];
+      const reader = new FileReader();
+      const file = e.target.files[0];
       reader.onload = function () {
         setFile(reader.result);
       };
@@ -37,7 +37,7 @@ function InputProfile() {
         icon={<UserAddOutlined id="input-file" />}
         onClick={handleClick}
         shape="circle"
-      ></Button>
+       />
       <input
         type="file"
         id="input-file"
@@ -49,13 +49,12 @@ function InputProfile() {
         {file ? (
           <ProfileBox>
             <img
-              className="profile_preview"
               shape="circle"
               src={file}
-              width="200"
-              height="200"
+              width="100%"
+              height="100%"
               object-fit="cover"
-            ></img>
+             />
           </ProfileBox>
         ) : (
           ""
@@ -68,7 +67,7 @@ function InputProfile() {
             shape="circle"
             size="large"
             icon={<RightOutlined />}
-          ></Button>
+           />
         </Link>
       </div>
     </div>
