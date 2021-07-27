@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Login from './Login/LoginPage';
 import SignIn from './Login/SignIn/SignIn';
-import SignUp from './Login/SignUp/SignUp';
+import SignUp from './Login/SignUp/Onboarding';
 import InputEmail from './Login/SignUp/InputEmail';
 import SelectCompany from './Login/SignUp/SelectCompany';
 import InputName from './Login/SignUp/InputName';
