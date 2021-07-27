@@ -5,7 +5,7 @@ import Layout from './Layout';
 import { Route } from 'react-router-dom';
 import ProfilePage from '../Profile/ProfilePage';
 
-function MainPage({ history }) {
+function Main({ history }) {
   return (
     <Layout>
       <Header history={history} />
@@ -19,4 +19,4 @@ function MainPage({ history }) {
   );
 }
 
-export default MainPage;
+export default Main;
