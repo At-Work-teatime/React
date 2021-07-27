@@ -1,17 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ProfileImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: ${(props) => props.width || '150px'};
+  height: ${(props) => props.height || '150px'};
   object-fit: cover;
+  border-radius: 100%;
 `;
 export const ProfileBox = styled.div`
-  top: 24px;
-  right: 24px;
-  width: ${props => props.width || "150px"};
-  height: ${props => props.height || "150px"};
+  width: ${(props) => props.width || '150px'};
+  height: ${(props) => props.height || '150px'};
+  object-fit: cover;
   border-radius: 100%;
   overflow: hidden;
   text-align: center;
-  position:fixed;
 `;
