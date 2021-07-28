@@ -21,6 +21,12 @@ function InputJob() {
         placeholder="디자이너"
         onChange={onChangeJob}
       />
+      <Input
+        allowClear
+        style={{ width: '40%' }}
+        placeholder="디자이너"
+        onChange={onChangeJob}
+      />
        <Link to="/SignUp/InputProfile">
         <Button
           type="primary"
