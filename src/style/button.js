@@ -12,7 +12,7 @@ export const FloatingBtn = styled.button`
   z-index: 99%;
 `;
 
-export const FullButton = styled.button`
+export const FullBtn = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,4 +29,16 @@ export const FullButton = styled.button`
   
   & + button {margin-top: 1rem;}
 `;
+
+export const TextBtn= styled.span`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 71px;
+  left: 24px;
+  color: #707070;
+`;
+  
   
