@@ -7,7 +7,13 @@
   max-width: 600px;
 }
 
-.img {
+.center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.select-company_title {
+  margin: 16px 0px 51px 0px;
 }

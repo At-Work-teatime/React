@@ -7,3 +7,20 @@ export const SearchInput = styled.input`
   boder-left: 0px;
   boder-bottom: 0px;
 `;
+
+export const Input = styled.input`
+  display: flex;
+  flex-direction: column;
+  border-right: 0;
+  border-top: 0;
+  boder-left: 0;
+  boder-bottom-width: 1;
+  padding: 17px 0px 14px 0px;
+  margin-top: 62px;
+  font-size: 16px;
+  color: #000000;
+
+  placeholder:${props => props.placeholder || '이메일'};
+  
+  & + button {margin-top: 1rem;}
+`;

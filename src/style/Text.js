@@ -7,6 +7,9 @@ export const Title = styled.div`
   margin: 30px 0px 14px 0px;
   width: 235px;
   color: #303030;
+
+  margin:${props => props.margin || '0px 0px 0px 0px'};
+  text-align:${props => props.textalign || 'left'};
 `;
 
 export const SubTitle = styled.div`
@@ -14,5 +17,9 @@ export const SubTitle = styled.div`
   font-weight: 400;
   font-size: 16px;
   width: 193px;
-  color: #707070;
+
+  color:${props => props.color || '#707070'};
+  margin:${props => props.margin || '0px 0px 0px 0px'};
+  text-align:${props => props.textalign || 'left'};
+  width:${props => props.width || '163px'};
 `;

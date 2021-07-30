@@ -23,7 +23,7 @@ function SignUp({ history }) {
         <img src={iconA} width="40px" height="40px" alt="icon" />
       </FloatingBtn>
       <TextBtn>
-        <Link to="../SignIn">건너뛰기</Link>
+        <Link to = "../SignUp/InputEmail">건너뛰기</Link>
       </TextBtn>
     </div>
   );

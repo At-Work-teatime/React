@@ -10,6 +10,9 @@ export const FloatingBtn = styled.button`
   border-radius: 40px;
   align-items: center;
   z-index: 99%;
+
+  color:${props => props.color || '#3182f6'};
+
 `;
 
 export const FullBtn = styled.button`
