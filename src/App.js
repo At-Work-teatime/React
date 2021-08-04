@@ -11,8 +11,7 @@ import SelectCompany from './Login/SignUp/SelectCompany';
 import InputName from './Login/SignUp/InputName';
 import InputJob from './Login/SignUp/InputJob';
 import InputProfile from './Login/SignUp/InputProfile';
-import InputInterest from './Login/SignUp/Interest';
-import MainPage from './Main/MainPage';
+import InputInterest from './Login/SignUp/InputInterest';
 
 
 import './css/screen.css';
@@ -30,8 +29,7 @@ function App() {
       <Route path="/SignUp/InputName" component={InputName} />
       <Route path="/SignUp/InputJob" component={InputJob} />
       <Route path="/SignUp/InputProfile" component={InputProfile} />
-      <Route path="/SignUp/Interest" component={InputInterest} />
-      <Route path="/main" component={MainPage} />
+      <Route path="/SignUp/InputInterest" component={InputInterest} />
     </div>
   );
 }

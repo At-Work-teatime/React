@@ -19,8 +19,10 @@ export const Input = styled.input`
   margin-top: 62px;
   font-size: 16px;
   color: #000000;
+  width: 100%;
 
   placeholder:${props => props.placeholder || '이메일'};
+  margin:${props => props.margin || '62px 0px 0px 0px'};
   
   & + button {margin-top: 1rem;}
 `;

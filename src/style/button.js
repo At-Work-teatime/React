@@ -45,3 +45,37 @@ export const TextBtn= styled.span`
 `;
   
   
+export const ChipBtn = styled.button`
+  display: inline;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 350;
+  padding: 14px 20px 12px 20px;
+  color:#000000;
+  
+  background-color:${props => props.backgroundColor || '#EEEDF4'};
+  margin:${props => props.margin || '0px 12px 0px 0px'};
+  
+  & + button {margin-top: 1rem;}
+`;
+
+
+export const Chip2Btn = styled.button`
+  display: inline;
+  align-items: center;
+  border: 1px #000000;
+  border-radius: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 350;
+  padding: 14px 20px 12px 20px;
+  color:#000000;
+  background-color:'withe'
+  
+  margin:${props => props.margin || '0px 12px 0px 0px'};
+  
+  & + button {margin-top: 1rem;}
+`;

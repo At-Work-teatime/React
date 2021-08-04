@@ -11,10 +11,15 @@ export const Layout = ({children}) => (
     </Wrapper>
 );
 
-export const Center = styled.div`
+export const CenterColumn = styled.div`
     padd display: flex;
     flex-direction: column;
     align-items: center;ing-top: 60px;
+`;
+
+export const Center = styled.div`
+    padd display: flex;
+    justify-content: center;
 `;
 
 export default Layout;
