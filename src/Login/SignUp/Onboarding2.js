@@ -1,35 +1,32 @@
-import React from 'react';
-import styled from "styled-components";
-
+import React from "react";
 import "../../css/screen.css";
-import imgA from '../../css/source/img1.png';
-import iconA from '../../css/icon/arrow-right.svg';
+import imgB from "../../css/source/img2.png";
+import iconA from "../../css/icon/arrow-right.svg";
+import {Link} from 'react-router-dom'
+import {Title, SubTitle} from "../../style/Text";
+import {FloatingBtn, TextBtn} from '../../style/button'
 
-function SignUp2({history}) {
+function SignUp({ history }) {
   return (
     <div className="none">
       <div className="img">
-        <img src={imgA} width="327px" alt="illustration"/>
+        <img src={imgB} width="327px" alt="illustration" />
       </div>
-      <section>
-        <form className="text__title">
-          함께 일일일
-        </form>
-        <form className="text_subtitle">
-          atwork는 회사사람들이 친해지는 그날까지 함께합니다.
-        </form>
-      </section>
-      <button className="btn-floting" onClick={() => history.push('../SignUp/InputForm')}>
-        <img src={iconA} width="40px" height="40px" alt="icon"/>
-      </button>
-      <span className="btn-text" >
-        <a href="../LoginPage.js">
-        건너뛰기
-        </a>
-      </span>
-
+      <Title>
+        어떤 대화를 해야할지 막막한가요?
+      </Title>
+      <SubTitle>
+        atwork는 회사사람들이 친해지는 그날까지 함께합니다.
+      </SubTitle>
+      <FloatingBtn
+        onClick={() => history.push("./Onboarding3")}>
+        <img src={iconA} width="40px" height="40px" alt="icon" />
+      </FloatingBtn>
+      <TextBtn>
+        <Link to = "../SignUp/InputEmail">건너뛰기</Link>
+      </TextBtn>
     </div>
   );
 }
 
-export default SignUp2;
+export default SignUp;
