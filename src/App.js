@@ -6,7 +6,7 @@ import SignIn from './Login/SignIn/SignIn';
 import MainPage from './Main/MainPage';
 import './css/screen.css';
 // import InputInterest from './Login/SignUp/Interest';
-import { useMediaQuery } from 'react-responsive';
+// import { useMediaQuery } from 'react-responsive';
 import GetWindowSize from './GetWindowSize';
 import { Screen } from './style/style';
 import SignUp from './Login/SignUp/SignUp';

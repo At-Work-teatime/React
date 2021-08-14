@@ -15,8 +15,8 @@ function MainPage({ history }) {
       <Header history={history} />
       <Route path="/main" exact>
       <Search />
-      <Card title="업무 날씨">
-        <img src ={Frip} width = "40px" />
+       <Card title="업무 날씨">
+        <img src ={Frip} width = "40px" alt =""/>
         <ImportantText>프립, 오늘의 업무 날씨는<br/> 맑음!</ImportantText>
         </Card>
         <Component1 />

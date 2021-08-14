@@ -2,7 +2,7 @@ import React from 'react';
 
 import img1 from "../../css/source/img_number_1.png";
 import iconA from "../../css/icon/arrow-right.svg";
-import { Title,FloatingBtn, ChipBtn, Chip2Btn} from '../../style/style'
+import { Title,FloatingBtn, Chip2Btn} from '../../style/style'
 
 
 function InputInterest({history}) {

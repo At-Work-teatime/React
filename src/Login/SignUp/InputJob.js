@@ -6,7 +6,6 @@ import  img1 from '../../css/source/img1.png'
 function InputJob({history,match}) {
   const [job, setJob] = useState('');
   const onChangeJob = (e) => {
-    const job = e.target.value;
     setJob(e.target.value);
   };
 return (
@@ -15,7 +14,7 @@ return (
       <Title margin="36px 0px 0px 0px">
        입사일과 직무를 입력 및 선택해주세요!
       </Title>
-      <Input allowClear placeholder="2020.11.16" margin="29px 0px 0px 0px"/>
+      <Input allowClear placeholder="2020.11.16" margin="29px 0px 0px 0px" onChange ={onChangeJob()}/>
       <h5 className="JobCategoryText">Designer</h5>
       <ChipBtn> 디자이너 </ChipBtn>
       <ChipBtn> 프로모션 디자이너 </ChipBtn>

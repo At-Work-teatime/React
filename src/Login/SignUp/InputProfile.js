@@ -22,7 +22,7 @@ function InputProfile({history,match}) {
       img.append('file', e.target.files[0]);
       const reader = new FileReader();
       const file = e.target.files[0];
-      reader.onload = function () {
+      reader.onload =  ()=> {
         setFile(reader.result);
       };
 
@@ -51,7 +51,7 @@ function InputProfile({history,match}) {
 <div>
         {file ? (
           <ProfileBox>
-            <img shape="circle" src={file} width="100%" height="100%" object-fit="cover" />
+            <img shape="circle" src={file} width="100%" height="100%" object-fit="cover" alt=""/>
           </ProfileBox>
         ) : (
           ''
