@@ -3,8 +3,10 @@ import { Button, Input } from 'antd';
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
 import { RightOutlined } from '@ant-design/icons';
+import {  FloatingBtn } from '../../style/style';
+import { getTargetUrl }from './util'
 
-function InputName() {
+function InputName({history,match}) {
   const [name, setName] = useState('');
   const [error, setErrror] = useState('');
   const onChangeName = (e) => {
@@ -17,18 +19,11 @@ function InputName() {
       1<h3>당신의 이름을 알려주세요</h3>
       <Input
         allowClear
-        style={{ width: '40%' }}
         placeholder="홍길동"
         onChange={onChangeName}
       />
-      <Link to="/SignUp/InputJob">
-        <Button
-          type="primary"
-          shape="circle"
-          size="large"
-          icon={<RightOutlined />}
-         />
-      </Link>
+            <FloatingBtn onClick={()=>history.push(getTargetUrl(match.path))} />
+
     </div>
   );
 }

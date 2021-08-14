@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "../../css/screen.css";
 import imgA from '../../css/source/img1.png';
 import iconA from '../../css/icon/arrow-right.svg';
+import { getTargetUrl }from './util'
 
 function SignUp2({history}) {
   return (
@@ -19,9 +20,6 @@ function SignUp2({history}) {
           atwork는 회사사람들이 친해지는 그날까지 함께합니다.
         </form>
       </section>
-      <button className="btn-floting" onClick={() => history.push('../SignUp/InputForm')}>
-        <img src={iconA} width="40px" height="40px" alt="icon"/>
-      </button>
       <span className="btn-text" >
         <a href="../LoginPage.js">
         건너뛰기

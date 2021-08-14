@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProfileImage } from '../style/profile';
+import { ProfileImage } from '../style/style';
 import profile from '../css/source/profile.png';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -10,11 +10,12 @@ const Positioner = styled.div`
   position: fixed;
   top: 5px;
   bottom: 5px;
-  width: 100%;
+  width: 75%;
   height: 60px;
 `;
 
 const HeaderContents = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,14 +23,16 @@ const HeaderContents = styled.div`
   padding-left: 1rem;
 `;
 const Spacer = styled.div`
-  flex-grow: 0.8;
+  flex-grow: 2;
 `;
 const Logo = styled.div`
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-family: 'Rajdhani';
 `;
-
+const Profile = styled.div`
+justify-content: flex-end;
+`
 function Header({ history }) {
   return (
     <div>
@@ -37,7 +40,9 @@ function Header({ history }) {
         <HeaderContents>
           <Logo onClick={() => history.push('/main')}>AtWork</Logo>
           <Spacer />
+          <Profile>
           <ProfileImage width="40px" height="40px" src={profile} onClick={() => history.push('/main/profile')} />
+          </Profile>
         </HeaderContents>
       </Positioner>
     </div>
