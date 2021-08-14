@@ -1,5 +1,5 @@
 import React from 'react';
-import { SearchInput, Title,SubTitle ,ImportantText} from '../style/style';
+import { ImportantText} from '../style/style';
 import Header from './Header';
 import Layout from './Layout';
 import { Route } from 'react-router-dom';

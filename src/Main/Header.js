@@ -2,7 +2,6 @@ import React from 'react';
 import { ProfileImage } from '../style/style';
 import profile from '../css/source/profile.png';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const Positioner = styled.div`
   display: flex;

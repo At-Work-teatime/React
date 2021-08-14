@@ -2,7 +2,6 @@ import React from 'react';
 import profile from '../css/source/profile.png';
 import { Button } from 'antd';
 import styled from 'styled-components';
-import { LeftOutlined } from '@ant-design/icons';
 
 function ProfilePage({ history }) {
   const ProfileImage = styled.img`

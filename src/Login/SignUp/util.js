@@ -10,7 +10,7 @@ export const isEmail = (email) => {
     if (to.length === 2) {
       return `${url}/1`;
     }
-    if(Number(to[2])>=6){
+    if(Number(to[2])>=9){
         return `/main`
     }
     return `/${to[1]}/${Number(to[2]) + 1}`;

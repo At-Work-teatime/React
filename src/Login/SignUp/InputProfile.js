@@ -3,8 +3,9 @@ import { Button, Input } from 'antd';
 import 'antd/dist/antd.css';
 import { Link } from 'react-router-dom';
 import { UserAddOutlined, RightOutlined } from '@ant-design/icons';
-
-import { ProfileBox ,  FloatingBtn } from '../../style/style';
+import  img1 from '../../css/source/img1.png'
+import  img2 from '../../css/source/img2.png'
+import { ProfileBox ,  FloatingBtn, Title } from '../../style/style';
 import { getTargetUrl }from './util'
 
 
@@ -29,13 +30,16 @@ function InputProfile({history,match}) {
     }
   };
   return (
-    <div>
-      4
-      <h3>
-        프로필 사진을
-        <br /> 등록해주세요!
-      </h3>
-      <Button icon={<UserAddOutlined id="input-file" />} onClick={handleClick} shape="circle" />
+
+    <div className = "NameTop">
+    <img src={img1} width="36px" alt="Frip-logo" />
+    <Title margin="36px 0px 0px 0px">
+    프로필 사진을 등록해주세요!
+    </Title>
+
+    <img className="ProfileUpload" src={img2} width="148px" alt="Frip-logo" />
+
+    <Button icon={<UserAddOutlined id="input-file" />} onClick={handleClick} shape="circle" />
       <input
         type="file"
         id="input-file"
@@ -43,7 +47,8 @@ function InputProfile({history,match}) {
         style={{ display: 'none' }}
         ref={hiddenFileInput}
       />
-      <div>
+
+<div>
         {file ? (
           <ProfileBox>
             <img shape="circle" src={file} width="100%" height="100%" object-fit="cover" />
@@ -53,9 +58,6 @@ function InputProfile({history,match}) {
         )}
       </div>
       <FloatingBtn onClick={()=>history.push(getTargetUrl(match.path))} />
-
-    </div>
-  );
-}
-
+  </div>
+  )}
 export default InputProfile;

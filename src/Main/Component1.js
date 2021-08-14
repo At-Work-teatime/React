@@ -1,11 +1,10 @@
 import React,{useRef,useState,useEffect} from 'react';
-import { SearchInput, Title,SubTitle ,ImportantText} from '../style/style';
-import Header from './Header';
-import Layout from './Layout';
-import { Route } from 'react-router-dom';
-import ProfilePage from '../Profile/ProfilePage';
-import Search from './Search';
-import Frip from '../css/source/Frip.png'
+// import { SearchInput, Title,SubTitle ,ImportantText} from '../style/style';
+// import Header from './Header';
+// import { Route } from 'react-router-dom';
+// import ProfilePage from '../Profile/ProfilePage';
+// import Search from './Search';
+// import Frip from '../css/source/Frip.png'
 import { Card } from 'antd';
 import styled from 'styled-components';
 
