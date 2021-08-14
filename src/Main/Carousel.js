@@ -22,6 +22,7 @@ export default class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
+      variableWidth: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -54,7 +55,7 @@ export default class SimpleSlider extends Component {
         <Title>새로운 입사자</Title>
         <Slider {...settings}>
           <div>
-            <Card>
+            <Card style={{ alignItems: 'center', width: '200px' }}>
               <ProfileImage width="100px" height="100px" src={profile} />
               <Title>김건우</Title>
               <SubTitle>소프트웨어 엔지니어</SubTitle>
@@ -62,7 +63,7 @@ export default class SimpleSlider extends Component {
             </Card>
           </div>
           <div>
-            <Card style={{ alignItems: 'center' }}>
+            <Card style={{ alignItems: 'center', width: '200px' }}>
               <ProfileImage width="100px" height="100px" src={profile} />
               <Title>김건우</Title>
               <SubTitle>소프트웨어 엔지니어</SubTitle>
@@ -70,7 +71,7 @@ export default class SimpleSlider extends Component {
             </Card>
           </div>
           <div>
-            <Card style={{ alignItems: 'center' }}>
+            <Card style={{ alignItems: 'center', width: '200px' }}>
               <ProfileImage width="100px" height="100px" src={profile} />
               <Title>김건우</Title>
               <SubTitle>소프트웨어 엔지니어</SubTitle>
@@ -78,7 +79,7 @@ export default class SimpleSlider extends Component {
             </Card>
           </div>
           <div>
-            <Card style={{ alignItems: 'center' }}>
+            <Card style={{ alignItems: 'center', width: '200px' }}>
               <ProfileImage width="100px" height="100px" src={profile} />
               <Title>김건우</Title>
               <SubTitle>소프트웨어 엔지니어</SubTitle>
@@ -86,7 +87,7 @@ export default class SimpleSlider extends Component {
             </Card>
           </div>
           <div>
-            <Card style={{ alignItems: 'center' }}>
+            <Card style={{ alignItems: 'center', width: '200px' }}>
               <ProfileImage width="100px" height="100px" src={profile} />
               <Title>김건우</Title>
               <SubTitle>소프트웨어 엔지니어</SubTitle>
@@ -94,7 +95,7 @@ export default class SimpleSlider extends Component {
             </Card>
           </div>
           <div>
-            <Card style={{ alignItems: 'center' }}>
+            <Card style={{ alignItems: 'center', width: '200px' }}>
               <ProfileImage width="100px" height="100px" src={profile} />
               <Title>김건우</Title>
               <SubTitle>소프트웨어 엔지니어</SubTitle>
