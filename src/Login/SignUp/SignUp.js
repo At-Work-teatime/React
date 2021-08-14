@@ -13,22 +13,22 @@ import { useMediaQuery } from 'react-responsive';
 // import GetWindowSize from '../../GetWindowSize';
 import { Onboarding } from '../../style/style';
 
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 });
-  return isDesktop ? children : null;
-};
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-  return isTablet ? children : null;
-};
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  return isMobile ? children : null;
-};
-const Default = ({ children }) => {
-  const isNotMobile = useMediaQuery({ minWidth: 768 });
-  return isNotMobile ? children : null;
-};
+// const Desktop = ({ children }) => {
+//   const isDesktop = useMediaQuery({ minWidth: 992 });
+//   return isDesktop ? children : null;
+// };
+// const Tablet = ({ children }) => {
+//   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+//   return isTablet ? children : null;
+// };
+// const Mobile = ({ children }) => {
+//   const isMobile = useMediaQuery({ maxWidth: 767 });
+//   return isMobile ? children : null;
+// };
+// const Default = ({ children }) => {
+//   const isNotMobile = useMediaQuery({ minWidth: 768 });
+//   return isNotMobile ? children : null;
+// };
 // function getTargetUrl(url) {
 //   const to = url.split('/');
 //   console.log(url);
@@ -41,13 +41,9 @@ const Default = ({ children }) => {
 function SignUp() {
   return (
     <Onboarding>
-      <Desktop>Desktop or laptop</Desktop>
-      <Tablet>Tablet</Tablet>
-      <Mobile>Mobile</Mobile>
-      <Default>Not mobile (desktop or laptop or tablet)</Default>
-      <Route path="/SignUp/1" component={Onboarding1} exact />
-      <Route path="/SignUp/2" component={Onboarding2} exact />
-      <Route path="/SignUp/3" component={Onboarding3} exact />
+      <Route path="/SignUp/1" component={Onboarding1} />
+      <Route path="/SignUp/2" component={Onboarding2}/>
+      <Route path="/SignUp/3" component={Onboarding3}/>
       <Route path="/SignUp/4" component={InputEmail} />
       <Route path="/SignUp/5" component={SelectCompany} />
       <Route path="/SignUp/6" component={InputName} />

@@ -3,7 +3,6 @@ import { Title, SubTitle, FloatingBtn, Screen, TextBtn } from '../../style/style
 import React from 'react';
 import '../../css/screen.css';
 import imgA from '../../css/source/img1.png';
-import iconA from '../../css/icon/arrow-right.svg';
 import { Link } from 'react-router-dom';
 import { getTargetUrl }from './util'
 

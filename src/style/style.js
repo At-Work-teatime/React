@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import iconA from '../css/icon/arrow-right.svg'
+import iconA from '../css/icon/arrow-right.svg';
 
 export const Onboarding = styled.div`
-  position : fixed;
+  position: fixed;
   top: 40px;
-`
+`;
 
 export const Screen = styled.div`
   height: 100vh;
   background-color: #ffffff;
   margin: 0px auto;
-  width: ${(props) => `${(props.width * 3) / 4 }px` || '300px'};
+  width: ${(props) => `${(props.width * 3) / 4}px` || '300px'};
 `;
 
 export const FloatingBtn = styled.button`
@@ -20,14 +20,14 @@ export const FloatingBtn = styled.button`
   background-color: #3182f6;
   border: none;
   border-radius: 100%;
-  width:65px;
-  height:65px;
+  width: 65px;
+  height: 65px;
   object-fit: cover;
   &:before {
     top: 2px;
     left: 2px;
     position: relative;
-    content: url(${iconA});   
+    content: url(${iconA});
   }
 `;
 
@@ -107,13 +107,13 @@ export const SubTitle = styled.div`
 `;
 
 export const ImportantText = styled.div`
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-'Helvetica Neue', sans-serif;
-font-weight: 500;
-font-size: 20px;
-width: 235px;
-color: #303030;
-`
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  font-weight: 1500;
+  font-size: 25px;
+  width: 235px;
+  color: #303030;
+`;
 
 // export const Title = styled.div`
 //   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -139,7 +139,6 @@ color: #303030;
 //   width:${props => props.width || '163px'};
 // `;
 
-
 // export const SearchInput = styled.input`
 //   border: none;
 //   border-right: 0px;
@@ -161,10 +160,12 @@ export const Input = styled.input`
   color: #000000;
   width: 100%;
 
-  placeholder:${props => props.placeholder || '이메일'};
-  margin:${props => props.margin || '62px 0px 0px 0px'};
-  
-  & + button {margin-top: 1rem;}
+  placeholder: ${(props) => props.placeholder || '이메일'};
+  margin: ${(props) => props.margin || '62px 0px 0px 0px'};
+
+  & + button {
+    margin-top: 1rem;
+  }
 `;
 
 // export const FloatingBtn = styled.button`
@@ -187,48 +188,41 @@ export const FullBtn = styled.button`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border: none; 
+  border: none;
   border-radius: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 350;
   padding: 17px 0px;
-  color:#ffffff;
-  
-  background-color:${props => props.color || 'blue'};
-  
-  & + button {margin-top: 1rem;}
+  color: #ffffff;
+
+  background-color: ${(props) => props.color || 'blue'};
+
+  & + button {
+    margin-top: 1rem;
+  }
 `;
 
-// export const TextBtn= styled.span`
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-//   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-//   font-size: 16px;
-//   font-weight: 500;
-//   position: fixed;
-//   bottom: 71px;
-//   left: 24px;
-//   color: #707070;
-// `;
-  
-  
 export const ChipBtn = styled.button`
   display: inline;
   align-items: center;
   border: none;
   border-radius: 30px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 350;
   padding: 14px 20px 12px 20px;
-  color:#000000;
-  
-  background-color:${props => props.backgroundColor || '#EEEDF4'};
-  margin:${props => props.margin || '0px 12px 0px 0px'};
-  
-  & + button {margin-top: 1rem;}
-`;
+  color: #000000;
 
+  background-color: ${(props) => props.backgroundColor || '#EEEDF4'};
+  margin: ${(props) => props.margin || '0px 12px 0px 0px'};
+
+  & + button {
+    margin-top: 1rem;
+  }
+`;
 
 export const Chip2Btn = styled.button`
   display: inline;
@@ -242,7 +236,12 @@ export const Chip2Btn = styled.button`
   color:#000000;
   background-color:'withe'
   
-  margin:${props => props.margin || '0px 12px 0px 0px'};
+  margin:${(props) => props.margin || '0px 12px 0px 0px'};
   
   & + button {margin-top: 1rem;}
+`;
+
+export const ProfileCard = styled.div`
+  width: 100%;
+  margin: 0 auto;
 `;

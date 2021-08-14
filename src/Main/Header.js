@@ -30,8 +30,8 @@ const Logo = styled.div`
   font-family: 'Rajdhani';
 `;
 const Profile = styled.div`
-justify-content: flex-end;
-`
+  justify-content: flex-end;
+`;
 function Header({ history }) {
   return (
     <div>
@@ -40,7 +40,7 @@ function Header({ history }) {
           <Logo onClick={() => history.push('/main')}>AtWork</Logo>
           <Spacer />
           <Profile>
-          <ProfileImage width="40px" height="40px" src={profile} onClick={() => history.push('/main/profile')} />
+            <ProfileImage width="40px" height="40px" src={profile} onClick={() => history.push('/main/profile')} />
           </Profile>
         </HeaderContents>
       </Positioner>

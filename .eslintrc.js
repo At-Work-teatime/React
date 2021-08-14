@@ -14,8 +14,9 @@ module.exports = {
     'import/prefer-default-export': 0,
     'no-shadow': 0,
     'react/button-has-type': 0,
-    'react-hooks/exhaustive-deps':0,
-    'no-unused-vars':0,
-    'no-useless-escape':0
+    'react-hooks/exhaustive-deps': 0,
+    'no-unused-vars': 0,
+    'no-useless-escape': 0,
+    'react/jsx-props-no-spreading': 0,
   },
 };
